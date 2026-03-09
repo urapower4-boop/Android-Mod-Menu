@@ -99,7 +99,7 @@ void Changes(JNIEnv *env, jclass clazz, jobject obj, jint featNum, jstring featN
     switch (featNum) {
         case 0:
             // offset, hex
-            PATCH_SWITCH(targetLibName, "0x1079728", "C0 03 5F D6", boolean);
+           // PATCH_SWITCH(targetLibName, "0x1079728", "C0 03 5F D6", boolean);
             // The patch switch has been returned and reworked:
             // - (active) Dobby-Kitty implementation
             // - reworked KittyMemory implementation
