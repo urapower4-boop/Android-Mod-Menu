@@ -92,14 +92,14 @@ jobjectArray GetFeatureList(JNIEnv *env, jobject context) {
 bool btnPressed = false;
 
 //Target main lib here
-#define targetLibName OBFUSCATE("libil2cpp.so")
+#define targetLibName OBFUSCATE("libunity.so")
 
 void Changes(JNIEnv *env, jclass clazz, jobject obj, jint featNum, jstring featName, jint value, jlong Lvalue, jboolean boolean, jstring text) {
 
     switch (featNum) {
         case 0:
             // offset, hex
-           // PATCH_SWITCH(targetLibName, "0x1079728", "C0 03 5F D6", boolean);
+           //PATCH_SWITCH(targetLibName, "0x1079728", "C0 03 5F D6", boolean);
             // The patch switch has been returned and reworked:
             // - (active) Dobby-Kitty implementation
             // - reworked KittyMemory implementation
